@@ -22,6 +22,8 @@
                     }
                   });
 
+        var obv2 = smart.patient.api.fetchAll({type: 'Observation'});
+        
         $.when(pt, obv).fail(onError);
 
         $.when(pt, obv).done(function(patient, obv) {

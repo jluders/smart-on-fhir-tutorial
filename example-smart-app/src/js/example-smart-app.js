@@ -24,7 +24,9 @@
 
         var obv2 = smart.patient.api.fetchAll({type: 'Observation'});
         
-        var conditions = smart.patient.api.fetchAll({type: 'Condition'});
+        var conditions = smart.patient.api.fetchAll({type: 'Condition'});        
+        var encounters = smart.patient.api.fetchAll({type: 'Encounter'});
+        var procedures = smart.patient.api.fetchAll({type: 'Procedure'});
         
         $.when(pt, obv).fail(onError);
 
